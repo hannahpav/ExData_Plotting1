@@ -27,7 +27,7 @@ png(file= "plot3.png") # Open png file
 #Create the empty plot
 with(table2, plot(date_time, as.double(Sub_metering_1), type = "n", xlab = "", ylab = "Energy sub metering"))
 #Create the legend
-legend("topright", lwd = 1, col = c("black", "blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lwd = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 #add the lines
 with(table2, lines(date_time, as.double(Sub_metering_1)))
 with(table2, lines(date_time, as.double(Sub_metering_2), col = "red"))
